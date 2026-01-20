@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+Aurora 2.0 – Beyond the Horizon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AI-Powered Mining Activity Monitoring using Sentinel-2 & Geospatial AI
 
-## Available Scripts
+⸻
 
-In the project directory, you can run:
+Overview
 
-### `npm start`
+Aurora 2.0 is an AI-driven geospatial monitoring system designed to detect, track, and analyze mining excavation activities using Sentinel-2 satellite imagery and Machine Learning–based change detection.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The platform enables near-real-time surveillance of mining operations, ensuring legal compliance, environmental protection, and data-driven regulatory enforcement, with a special focus on detecting illegal excavation in No-Go zones.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is developed as part of Aurora 2.0 – Beyond the Horizon Hackathon, in collaboration with SAC-ISRO & IIT Dharwad.
 
-### `npm test`
+⸻
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Problem Statement
 
-### `npm run build`
+Mining activities often expand gradually and are difficult to monitor using traditional manual surveys. Existing systems:
+	•	Are time-consuming
+	•	Fail to distinguish seasonal changes from excavation
+	•	Do not scale well for large geographic regions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+There is a need for a scalable, automated, and intelligent monitoring system that can:
+	•	Detect excavation accurately
+	•	Monitor excavation growth over time
+	•	Identify violations inside protected No-Go zones
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⸻
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Our Solution
 
-### `npm run eject`
+Aurora 2.0 introduces a machine learning–enabled, satellite-based monitoring framework that:
+	•	Analyzes Sentinel-2 multispectral time-series imagery
+	•	Learns excavation patterns adaptively (no fixed thresholds)
+	•	Detects and quantifies progressive mining activity
+	•	Highlights No-Go zone violations
+	•	Presents insights via an interactive web dashboard
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+⸻
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Key Features
+	• ML-Based Excavation Detection
+Adaptive learning of excavation signatures from satellite imagery.
+	• No-Go Zone Violation Detection
+Automatic identification of excavation inside protected areas.
+	• Excavation Growth Analysis
+Time-series visualization of cumulative excavation area.
+	• Interactive Map Dashboard
+Overlay of mines, no-go zones, excavation masks, and violations.
+	•	⚡ Near-Real-Time Monitoring
+Designed to ingest new satellite data as it becomes available.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="676" height="472" alt="image" src="https://github.com/user-attachments/assets/3808caf4-9360-4ad2-b162-b90eaf58d1cb" />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+What is ML Excavation?
 
-## Learn More
+ML Excavation refers to the use of machine learning models to automatically detect land surface disturbances caused by mining by analyzing spectral and temporal changes in satellite imagery.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The model:
+	•	Learns excavation patterns from historical data
+	•	Differentiates excavation from seasonal vegetation change
+	•	Produces excavation probability maps and growth metrics
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+⸻
 
-### Code Splitting
+Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Frontend
+	•	React.js
+	•	React-Leaflet
+	•	Leaflet.js
+	•	Axios
+	•	Chart.js / Recharts (Analytics)
 
-### Analyzing the Bundle Size
+Backend
+	•	Node.js
+	•	Express.js
+	•	GeoJSON APIs
+	•	CORS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Data & ML
+	•	Sentinel-2 Level-2A imagery
+	•	Spectral indices (NDVI, SWIR, etc.)
+	•	Time-series change detection
+	•	Mock ML outputs (extendable to real models)
 
-### Making a Progressive Web App
+⸻
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Project Structure
+<img width="902" height="424" alt="image" src="https://github.com/user-attachments/assets/9affc4f5-f0db-4506-9273-49c24e102231" />
 
-### Advanced Configuration
+Dashboard Capabilities
+	•	View legal mine boundaries
+	•	Visualize no-go zones
+	•	See ML-detected excavation overlays
+	•	Highlight no-go zone violations
+	•	Track excavation growth over time
+	•	Toggle layers interactively
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+⸻
 
-### Deployment
+Real-World Impact
+	•	Enables transparent mining oversight
+	•	Reduces dependency on manual field inspections
+	•	Protects ecologically sensitive regions
+	•	Scales to nationwide monitoring
+	•	Supports sustainable and responsible mining
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+⸻
 
-### `npm run build` fails to minify
+Hackathon Relevance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This solution aligns directly with:
+	•	SAC-ISRO & VEDAS operational needs
+	•	Real-world Earth observation challenges
+	•	Scalable geospatial AI deployment
+
+⸻
+
+Future Scope
+	•	Integration of real ML models (Autoencoders / U-Net)
+	•	Automated Sentinel-2 ingestion via STAC
+	•	Alert system for early violation detection
+	•	UAV + Satellite data fusion
+	•	Nationwide deployment on VEDAS platform
+
+⸻
+
+Author
+
+TUSHAR SHARMA
+STUDENT
+CHANDIGARH UNIVERSITY (PUNJAB)
+
+⸻
+
+📜 License
+
+This project is developed for academic and hackathon purposes.
+
+⸻
+
+“The best innovations begin when data meets the real world.”
+
