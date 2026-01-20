@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forest Buffer",
+        "type": "forest"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.30, 23.75],
+            [85.32, 23.75],
+            [85.32, 23.77],
+            [85.30, 23.77],
+            [85.30, 23.75]
+          ]
+        ]
+      }
+    }
+  ]
+}
